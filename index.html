@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Seamless Designs — handcrafted jewelry made with love. Browse our unique, one-of-a-kind pieces."
+    />
+    <title>Seamless Designs | Handcrafted Jewelry</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="#home" class="nav__logo">Seamless Designs</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero__content">
+        <p class="hero__tagline">Handcrafted with intention</p>
+        <h1 class="hero__title">Seamless<br /><em>Designs</em></h1>
+        <p class="hero__subtitle">
+          Unique, one-of-a-kind jewelry pieces crafted by hand — each telling
+          its own story.
+        </p>
+        <a href="#collection" class="btn btn--primary">Explore Collection</a>
+      </div>
+      <div class="hero__decoration" aria-hidden="true">
+        <div class="hero__ring hero__ring--1"></div>
+        <div class="hero__ring hero__ring--2"></div>
+        <div class="hero__ring hero__ring--3"></div>
+      </div>
+    </section>
+
+    <!-- Collection -->
+    <section class="section collection" id="collection">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__label">Handmade with love</p>
+          <h2 class="section__title">The Collection</h2>
+          <p class="section__desc">
+            Every piece is thoughtfully designed and crafted by hand using
+            ethically sourced materials.
+          </p>
+        </div>
+
+        <div class="collection__filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="rings">Rings</button>
+          <button class="filter-btn" data-filter="necklaces">Necklaces</button>
+          <button class="filter-btn" data-filter="earrings">Earrings</button>
+          <button class="filter-btn" data-filter="bracelets">Bracelets</button>
+        </div>
+
+        <div class="collection__grid" id="collectionGrid">
+          <!-- Rings -->
+          <article class="card" data-category="rings">
+            <div class="card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&q=80"
+                alt="Gold twisted band ring"
+                class="card__img"
+                loading="lazy"
+              />
+              <span class="card__badge">New</span>
+            </div>
+            <div class="card__body">
+              <span class="card__category">Ring</span>
+              <h3 class="card__title">Golden Twist Band</h3>
+              <p class="card__price">$68</p>
+            </div>
+          </article>
+
+          <article class="card" data-category="necklaces">
+            <div class="card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=600&q=80"
+                alt="Delicate gold chain necklace with pendant"
+                class="card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="card__body">
+              <span class="card__category">Necklace</span>
+              <h3 class="card__title">Luna Pendant</h3>
+              <p class="card__price">$95</p>
+            </div>
+          </article>
+
+          <article class="card" data-category="earrings">
+            <div class="card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=600&q=80"
+                alt="Gold hoop earrings"
+                class="card__img"
+                loading="lazy"
+              />
+              <span class="card__badge">Popular</span>
+            </div>
+            <div class="card__body">
+              <span class="card__category">Earrings</span>
+              <h3 class="card__title">Crescent Hoops</h3>
+              <p class="card__price">$52</p>
+            </div>
+          </article>
+
+          <article class="card" data-category="bracelets">
+            <div class="card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1573408301185-9519f94815b8?w=600&q=80"
+                alt="Delicate gold chain bracelet"
+                class="card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="card__body">
+              <span class="card__category">Bracelet</span>
+              <h3 class="card__title">Dew Drop Chain</h3>
+              <p class="card__price">$44</p>
+            </div>
+          </article>
+
+          <article class="card" data-category="rings">
+            <div class="card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=600&q=80"
+                alt="Stacked delicate rings"
+                class="card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="card__body">
+              <span class="card__category">Ring</span>
+              <h3 class="card__title">Stacking Set</h3>
+              <p class="card__price">$78</p>
+            </div>
+          </article>
+
+          <article class="card" data-category="necklaces">
+            <div class="card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=600&q=80"
+                alt="Layered necklaces with gemstone"
+                class="card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="card__body">
+              <span class="card__category">Necklace</span>
+              <h3 class="card__title">Celestial Layers</h3>
+              <p class="card__price">$120</p>
+            </div>
+          </article>
+
+          <article class="card" data-category="earrings">
+            <div class="card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?w=600&q=80"
+                alt="Pearl drop earrings"
+                class="card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="card__body">
+              <span class="card__category">Earrings</span>
+              <h3 class="card__title">Pearl Drops</h3>
+              <p class="card__price">$60</p>
+            </div>
+          </article>
+
+          <article class="card" data-category="bracelets">
+            <div class="card__img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=600&q=80"
+                alt="Beaded gemstone bracelet"
+                class="card__img"
+                loading="lazy"
+              />
+              <span class="card__badge">New</span>
+            </div>
+            <div class="card__body">
+              <span class="card__category">Bracelet</span>
+              <h3 class="card__title">Aurora Beads</h3>
+              <p class="card__price">$38</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="container about__inner">
+        <div class="about__visual" aria-hidden="true">
+          <div class="about__img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1584302179602-e4c3d3fd629d?w=700&q=80"
+              alt="Hands shaping a piece of jewelry at a workbench"
+              class="about__img"
+              loading="lazy"
+            />
+          </div>
+          <div class="about__accent"></div>
+        </div>
+        <div class="about__text">
+          <p class="section__label">The maker</p>
+          <h2 class="section__title">About Seamless Designs</h2>
+          <p>
+            Seamless Designs was born from a deep love for the intimate art of
+            jewelry making. Every piece starts as a sketch, is shaped by hand,
+            and finished with care — no two are ever exactly alike.
+          </p>
+          <p>
+            I work from a small studio, sourcing metals and gemstones from
+            ethical suppliers. My goal is to create wearable art that feels both
+            timeless and personal.
+          </p>
+          <a href="#contact" class="btn btn--outline">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section process" id="process">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__label">Behind the work</p>
+          <h2 class="section__title">The Process</h2>
+        </div>
+        <div class="process__steps">
+          <div class="step">
+            <div class="step__number">01</div>
+            <h3 class="step__title">Sketch &amp; Design</h3>
+            <p class="step__desc">
+              Each piece begins as a hand-drawn concept, inspired by nature,
+              geometry, and the person who will wear it.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step__number">02</div>
+            <h3 class="step__title">Source Materials</h3>
+            <p class="step__desc">
+              Metals and stones are carefully selected from trusted, ethical
+              suppliers who share our values.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step__number">03</div>
+            <h3 class="step__title">Craft by Hand</h3>
+            <p class="step__desc">
+              Using traditional jeweler's tools, each piece is cut, shaped,
+              soldered, and polished entirely by hand.
+            </p>
+          </div>
+          <div class="step">
+            <div class="step__number">04</div>
+            <h3 class="step__title">Quality Check</h3>
+            <p class="step__desc">
+              Before shipping, every piece is inspected to ensure it meets our
+              standards of beauty and durability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container contact__inner">
+        <div class="section__header">
+          <p class="section__label">Say hello</p>
+          <h2 class="section__title">Get in Touch</h2>
+          <p class="section__desc">
+            Interested in a custom piece, wholesale inquiry, or just want to
+            chat about jewelry? Email me directly at
+            <a href="mailto:hello@seamlessdesigns.store" class="contact__email"
+              >hello@seamlessdesigns.store</a
+            >.
+          </p>
+        </div>
+        <form
+          class="contact__form"
+          id="contactForm"
+          action="mailto:hello@seamlessdesigns.store"
+          method="get"
+          enctype="text/plain"
+        >
+          <div class="form__row">
+            <div class="form__group">
+              <label for="name" class="form__label">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form__input"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__label">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form__input"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="subject" class="form__label">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              class="form__input"
+              placeholder="Custom order, question…"
+            />
+          </div>
+          <div class="form__group">
+            <label for="message" class="form__label">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              class="form__input form__input--textarea"
+              placeholder="Tell me about your vision…"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+          <p class="form__note" id="formNote" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <span class="footer__logo">Seamless Designs</span>
+          <p class="footer__tagline">Handcrafted jewelry — made with love.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="#collection">Collection</a>
+          <a href="#about">About</a>
+          <a href="#process">Process</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer__social">
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            class="footer__social-link"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+            </svg>
+          </a>
+          <a
+            href="https://etsy.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Etsy shop"
+            class="footer__social-link"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M10 3H7v18h3V3zm7 0h-4v6h4V3zm0 8h-4v10h4V11zm-7 4H7v4h3v-4z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <p class="footer__copy">
+        &copy; <span id="year"></span> Seamless Designs. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
